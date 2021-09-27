@@ -463,7 +463,7 @@ header .navbar ul li a:hover{
 
 @media and screen(max-width:991px){
     html{
-        font-size: 85%;
+        font-size: 55%;
     }
 }
 @media and screen(max-width:768px){
@@ -472,7 +472,8 @@ header .navbar ul li a:hover{
     }
     header .navbar{
         position: fixed;
-        top:8rem; left:-80%;
+        top:8rem; 
+        left:-120%;
         height: 100%;
         width:100%;
         background:#eee;
