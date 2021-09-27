@@ -462,14 +462,11 @@ header .navbar ul li a:hover{
 /* media queries  */
 
 @media (max-width:991px){
-
-    html{
-        font-size: 95%;
-    }
-
+    /*html{
+        font-size: 65%;
+    }*/
 }
 @media (max-width:900px){
-
     #menu{
         display: block;
     }
@@ -543,7 +540,6 @@ header .navbar ul li a:hover{
 }
 
 @media (max-width:500px){
-
     html{
         font-size: 50%;
     }
