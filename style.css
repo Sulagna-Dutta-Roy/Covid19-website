@@ -472,7 +472,7 @@ header .navbar ul li a:hover{
     }
     header .navbar{
         position: fixed;
-        top:8rem; left:-100%;
+        top:8rem; left:-80%;
         height: 100%;
         width:100%;
         background:#eee;
