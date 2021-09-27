@@ -460,9 +460,10 @@ header .navbar ul li a:hover{
 
     header .navbar{
         position: fixed;
-        top:8rem; left:-120%;
+        top:8rem; 
+        left:-120%;
         height: 100%;
-        width:10%;
+        width:100%;
         background:#eee;
         border-top: .2rem solid rgba(0,0,0,.1);
     }
