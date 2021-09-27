@@ -445,6 +445,7 @@ header .navbar ul li a:hover{
     height: 7rem;
 }
 
+
 /* media queries  */
 
 @media (max-width:991px){
@@ -456,14 +457,14 @@ header .navbar ul li a:hover{
     #menu{
         display: block;
     }
+
     header .navbar{
         position: fixed;
-        top:8rem; 
-        left:-120%;
+        top:8rem; left:-120%;
         height: 100%;
         width:100%;
         background:#eee;
-        border-top: .2rem solid rgba(0,0,0,0.1);
+        border-top: .2rem solid rgba(0,0,0,.1);
     }
 
     header .navbar ul{
@@ -524,7 +525,6 @@ header .navbar ul li a:hover{
         text-align: center;
     }
 }
-
 @media (max-width:500px){
     html{
         font-size: 50%;
@@ -533,5 +533,4 @@ header .navbar ul li a:hover{
         padding:0 3%;
         padding-top: 9rem;
     }
-
 }
