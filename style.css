@@ -462,15 +462,14 @@ header .navbar ul li a:hover{
 /* media queries  */
 
 @media (max-width:991px){
-    /*html{
+    html{
         font-size: 65%;
-    }*/
+    }
 }
-@media (max-width:900px){
+@media (max-width:778px){
     #menu{
         display: block;
     }
-
     header .navbar{
         position: fixed;
         top:8rem; left:-120%;
