@@ -464,12 +464,11 @@ header .navbar ul li a:hover{
 @media (max-width:991px){
 
     html{
-        font-size: 55%;
+        font-size: 95%;
     }
 
 }
-
-@media (max-width:768px){
+@media (max-width:900px){
 
     #menu{
         display: block;
