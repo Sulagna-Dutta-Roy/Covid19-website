@@ -461,12 +461,12 @@ header .navbar ul li a:hover{
 
 /* media queries  */
 
-@media (max-width:991px){
+@media and screen(max-width:991px){
     html{
         font-size: 85%;
     }
 }
-@media (max-width:758px){
+@media and screen(max-width:758px){
     #menu{
         display: block;
     }
