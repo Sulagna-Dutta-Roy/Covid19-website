@@ -466,13 +466,13 @@ header .navbar ul li a:hover{
         font-size: 65%;
     }
 }
-@media (max-width:778px){
+@media (max-width:758px){
     #menu{
         display: block;
     }
     header .navbar{
         position: fixed;
-        top:8rem; left:-80%;
+        top:8rem; left:-50%;
         height: 100%;
         width:100%;
         background:#eee;
