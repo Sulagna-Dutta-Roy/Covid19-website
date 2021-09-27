@@ -462,7 +462,7 @@ header .navbar ul li a:hover{
         position: fixed;
         top:8rem; left:-120%;
         height: 100%;
-        width:90%;
+        width:70%;
         background:#eee;
         border-top: .2rem solid rgba(0,0,0,.1);
     }
