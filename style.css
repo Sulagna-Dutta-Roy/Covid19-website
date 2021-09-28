@@ -318,7 +318,11 @@ header .navbar ul li a:hover{
     background-position: center;
 }
 .grid .image {
-    text-align: center;
+    height: 80vh;
+    width: 100%;
+    align-items: center;
+    background:url(Images/understand1.png) no-repeat;
+    background-position: center;
 }
 
 .news .heading {
