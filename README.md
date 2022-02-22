@@ -8,7 +8,7 @@
 </ul>
 
 <h2>View Live:</h2>
-<p>https://sulagna-dutta-roy.github.io/Covid19-website/
+<p>https://sulagna-dutta-roy.github.io/Covid19-website
 </p>
 
 <h4>Author</h4>
