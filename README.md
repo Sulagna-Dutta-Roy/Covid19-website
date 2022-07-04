@@ -1,6 +1,12 @@
 # Welcome to Covid-19 Awareness Website
 
 This respository is specially for newcomers who wants to enhance their knowledge and skills by contributing their Ideas.Specially designed for the beginners of html,css,js.
+<h2 align="center">
+This repository has been a part of HackCLUB Rait
+<br/><br/>
+<img src="https://user-images.githubusercontent.com/72568715/177209006-5955107f-17dd-4d35-bbc3-c37e419a883e.PNG"> 
+
+</h2>
 
 
 ###  How to Start?  
