@@ -52,7 +52,7 @@ section{
     padding:1rem 4rem;
     border-radius: 5rem;
     background:var(--red);
-    color:#fff;
+    color:#141313;
     overflow: hidden;
     position: relative;
     z-index: 0;
@@ -73,6 +73,10 @@ section{
 
 .btn:hover::before{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.btn:hover {
+    color: #bfbcbc;
 }
 
 .heading{
@@ -119,7 +123,7 @@ header .navbar ul li{
 }
 
 header .navbar ul li a{
-    color:#999;
+    color: #6a6666;
     font-size: 2rem;
 }
 
@@ -157,11 +161,11 @@ header .navbar ul li a:hover{
 }
 
 .home .content span{
-    color:var(--red);
+    color: #b3b3b3;
     font-size: 2.5rem;
 }
 
-.home .content h3{
+.home .content h2{
     color:#666;
     font-size: 5rem;
 }
@@ -200,7 +204,7 @@ header .navbar ul li a:hover{
     width:17rem;
 }
 
-.protect .box-container .box h3{
+.protect .box-container .box h2{
     font-size: 2.5rem;
     color:#666;
     padding:1rem 0;
@@ -208,7 +212,7 @@ header .navbar ul li a:hover{
 
 .protect .box-container .box p{
     font-size: 1.4rem;
-    color:#999;
+    color:#6a6767;
     padding:.5rem;
 }
 
@@ -293,7 +297,7 @@ header .navbar ul li a:hover{
 
 .precautions .row .content p{
     font-size: 1.7rem;
-    color:grey;
+    color:#6e6a6a;
     padding:1rem 0;
 }
 
@@ -376,7 +380,7 @@ header .navbar ul li a:hover{
     margin:2rem;
 }
 
-.footer .box-container .box h3{
+.footer .box-container .box h2{
     font-size: 2.5rem;
     color:#fff;
     padding-bottom: 2rem;
