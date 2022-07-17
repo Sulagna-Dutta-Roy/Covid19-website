@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width-device=width,initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Main Causes</title>
+        <style>
+        
+            body
+            {
+                margin: 50px;
+                padding: 25;
+                font-size: 16px;
+                background-position: center;
+                background-image: url(images/sympbg.png);
+
+            }
+        
+            span{
+                font-size: 20px;
+                background-color: rgb(228, 191, 191);
+                color: rgb(0, 0, 0);
+                background-image: linear-gradient(to right,
+                rgba(221, 207, 207, 0.9) 25%,
+                rgba(243, 181, 181, 0.781) 50%,
+                rgba(197, 145, 145, 0.9) 75%);
+                -webkit-animation: 4s linear 0s infinite alternate move_eye;
+                animation: 4s linear 0s infinite alternate move_eye;
+                }
+            .main{
+                text-decoration: none;
+                text-align: center;
+                
+            }
+            .btn{
+                display: inline-block;
+                margin-top: 0.5rem;
+                padding:0.5rem 3rem;
+                border-radius: 5rem;
+                background:var(--red);
+                color:#fff;
+                background-color: rgb(161, 156, 156);
+                overflow: hidden;
+                position: relative;
+                z-index: 0;
+                font-size: 1.3rem;
+                text-decoration: none;
+            }
+
+            
+
+            .btn::before{
+                content:'';
+                position: absolute;
+                top: 0; left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+                background:#444;
+                clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+                transition:.3s linear;
+            }
+
+            .btn:hover::before{
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+
+            .box2:hover{
+                 transform:translateY(-0.5rem);
+                 box-shadow: 0 30px 40px rgba(0,0,0.3);
+                }
+              
+            .box3:hover{
+                transform:translateY(-0.5rem);
+                 box-shadow: 0 30px 40px rgba(0,0,0.3);
+                }
+            
+            .box4:hover{
+                transform:translateY(-0.5rem);
+                 box-shadow: 0 30px 40px rgba(0,0,0.3);
+                 
+                }
+            .picture{
+                display: block;
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+<body class="body">
+    <div>
+        <a href="index.html" class="btn">Back</a>
+    </div>
+    <section class="container" id="container">
+        <div class="main">
+            <span style=" text-align: center; font-size: 60px;
+            "><u>Main causes</span></u>
+        </div>
+        
+    </section>
+    <section class="causes" id="causes">
+        <div class="box">
+            <ul>
+                <li>
+                    <p ><b><span>Symtoms</b></p>
+                        <b>
+                        Covid-19 symptoms vary from person to person, although there are cases where infected people don't develop any symptoms, can be termed as asymptomatic. But in general, people with Covid-19 can suffer from these symptoms below.This distinguishing symptoms of Covid-19 virus are similar to upper respiratory tract infections as well,comprise the following:
+                        <b>
+                        <br>
+                        <br>
+                        
+                        <ul>
+                            <div class="symtoms">
+                                <li>High Fever or Chills</li>
+                                <li>Dry Cough</li>
+                                <li>Headache</li>
+                                <li>Sore Throat</li>
+                                <li>Joint and muscle Pains</li>
+                                <li>Breathing Issues</li>
+                                <li>Tiredness</li>
+                                <li>Loss in taste and smell</li>
+                                <li>Nausea</li>
+                                <li>Diarrhoea</li>
+                            </div>
+                        </ul>
+                        <p> Infected person might also face some other symptoms, but these are some of it's common symptoms</p>
+
+                
+                <li>
+                    <p><b><span >When to be concerned?</span></b></p>
+                    <b>
+                        "AS EARLY AS POSSIBLE"<br>
+                        Symptoms may appear within 2 to 14 days or even earlier, after exposure to the virus.
+                        The children might face same yet milder symptoms. Adults with severe medical issues are at higher risk.
+                    </b>
+                </li>
+                
+
+            <h2 style="color: rgb(20, 20, 106);"> Call 911 and get connected to the healthcare center, if you notice these changes</h2>
+            <ul>
+                <div class="changes">
+                    <li>Trouble while breathing</li>
+                    <li>Pressure or Pain in your Chest</li>
+                    <li>Tiredness</li>
+                    <li>Skin color changes, generally turns bluish</li>
+                    <li>Diarrhoea</li>
+                </div>
+
+            </ul>
+
+        
+            </ul>
+            <p> Although, Not all possible symptoms can be listed, so try not to rely only on the above information given. Contact your personal healthcare provider if you are concerned you may be suffering from Covid-19 or have any related symptoms</p>
+        </div>
+    </section>
+
+    <section class="picture" id="picture">
+        
+        <div class="box2">
+            <img src="Images/s2.jpeg">
+        </div><br/><br/>
+        <div class="box3">
+            <img src="Images/s3.jpeg">
+        </div>
+        <div class="box4">
+            <img src="Images/s4.jpeg">
+        </div>
+    </section>
+</body>
+</html>
