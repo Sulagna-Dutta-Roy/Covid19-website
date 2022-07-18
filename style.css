@@ -1,8 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
 :root{
-    --red: grey;
+    --red: #de1111; /* Used for Buttons */
+    --primary-header-color:#fff;
+    --header-font-color:rgb(0, 0, 0);
+    --primary-color:#f9f9f9;
+    --secondary-color:#212121;
+    --precautions-content: #000;
+    --symtoms-content:#666;
+    --footer:#333;
+    --btn-color-1:#de1111;
+    --btn-color-2:#ffffff;
 }
+.dark-theme{
+    --red: #de1111;
+    --primary-header-color:#171717;
+    --header-font-color:#fff;
+    --primary-color:#000000;
+    --secondary-color:#212121;
+    --precautions-content: rgb(255, 255, 255);
+    --symtoms-content:rgb(255, 255, 255);
+    --footer: #212121;
+    --btn-color-1:#de1111;
+    --btn-color-2:#000000;
+}
+
 
 *{
     font-family: 'Roboto', sans-serif;
@@ -19,6 +41,12 @@
     color:#fff;
 }
 
+#icon{
+    width: 40px;
+    cursor: pointer;
+    margin-left:20px;
+}
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -29,7 +57,7 @@ html::-webkit-scrollbar{
 }
 
 html::-webkit-scrollbar-track{
-    background: #000;
+    background: rgb(134, 125, 125);
 }
 
 html::-webkit-scrollbar-thumb{
@@ -37,7 +65,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background:#f9f9f9;
+    background:var(--primary-color);
 }
 
 section{
@@ -51,8 +79,8 @@ section{
     margin-top: 1rem;
     padding:1rem 4rem;
     border-radius: 5rem;
-    background:var(--red);
-    color:#141313;
+    background:var(--btn-color-1);
+    color:var(--btn-color-2);
     overflow: hidden;
     position: relative;
     z-index: 0;
@@ -76,7 +104,7 @@ section{
 }
 
 .btn:hover {
-    color: #bfbcbc;
+    color: #fdfffe;
 }
 
 .heading{
@@ -91,7 +119,7 @@ section{
 
 header{
     width:100%;
-    background: #fff;
+    background: var(--primary-header-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -104,7 +132,7 @@ header{
 
 header .logo{
     font-size: 2.5rem;
-    color:#666;
+    color:var(--header-font-color);
 }
 
 header .logo span{
@@ -123,7 +151,7 @@ header .navbar ul li{
 }
 
 header .navbar ul li a{
-    color: #6a6666;
+    color: var(--header-font-color);
     font-size: 2rem;
 }
 
@@ -166,7 +194,7 @@ header .navbar ul li a:hover{
 }
 
 .home .content h2{
-    color:#666;
+    color:var(--header-font-color);
     font-size: 5rem;
 }
 
@@ -257,13 +285,13 @@ header .navbar ul li a:hover{
 
 .symtoms .content ul li{
     margin-left: 2rem;
-    font-size: 1.5rem;
-    color:#666;
+    font-size: 1.85rem;
+    color: var(--symtoms-content);
     padding: .5rem 0;
 }
 
 .precautions{
-    background:#fff;
+    background:var(--primary-header-color);
 }
 
 .precautions .row{
@@ -292,7 +320,8 @@ header .navbar ul li a:hover{
 }
 
 .precautions .row .content .heading{
-    color: grey;
+    color: rgb(128, 128, 128);
+    margin-left: 20rem;
 }
 
 .precautions .row .content p{
@@ -303,9 +332,10 @@ header .navbar ul li a:hover{
 
 .precautions .row .content ul li{
     margin-left: 2rem;
-    font-size: 1.5rem;
-    color: #000;
+    font-size: 2rem;
+    color: var(--precautions-content);
     padding:.5rem 0;
+    margin-left: 22rem;
 }
 
 
@@ -332,12 +362,13 @@ header .navbar ul li a:hover{
 .news .heading {
     text-align: center;
     font-size: 40px;
+    color: #de1111
 }
 
 .news .livenews {
     text-align: center;
     padding-top: 30px;
-    font-size: 40px;
+    font-size: 37px;
 }
 .news .livenews a{
     color: grey;
@@ -352,7 +383,7 @@ header .navbar ul li a:hover{
 }
 .scroll-top i{
     color: #000;
-    background-color: #fff;
+    background-color: var(--primary-header-color);
     font-size: 30px;
 }
 
@@ -366,7 +397,7 @@ header .navbar ul li a:hover{
 .footer{
     min-height: auto;
     padding-top: 0;
-    background:#333;
+    background:var(--footer);
 }
 
 .footer .box-container{
