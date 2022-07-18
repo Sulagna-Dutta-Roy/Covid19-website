@@ -5,6 +5,21 @@
         <meta charset="utf-8">
         <title>Protect And Awarness</title>
         <style>
+            body
+            {
+                margin: 50px;
+                padding: 25;
+                font-size: 16px;
+                background-position: center;
+                background-color: rgb(243, 248, 251);
+                color: rgb(0, 0, 0);
+                background-image: linear-gradient(to right,
+                rgba(194, 202, 222, 0.9) 65%,
+                rgba(44, 44, 215, 0.781) 10%,
+                rgba(169, 166, 192, 0.9) 85%);
+                -webkit-animation: 4s linear 0s infinite alternate move_eye;
+                animation: 4s linear 0s infinite alternate move_eye;
+            }
             .protect{
                 display: block;
                 text-align: center;
@@ -12,19 +27,68 @@
             .box h1{
                 text-align: center;
             }
+            .btn{
+                display: inline-block;
+                margin-top: 0.5rem;
+                padding:0.5rem 3rem;
+                border-radius: 5rem;
+                background:var(--red);
+                color:#fff;
+                background-color: rgba(148, 160, 223, 0.9) ;
+                overflow: hidden;
+                position: relative;
+                z-index: 0;
+                font-size: 1.3rem;
+                text-decoration: none;
+            }
+            .btn::before{
+                content:'';
+                position: absolute;
+                top: 0; left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+                background:rgb(34, 20, 160);
+                clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+                transition:.3s linear;}
+
+            .btn:hover::before{
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+            .head{
+                text-decoration: none;
+                text-align: center; 
+                font-size: 40px;
+                
+            }
+            span{
+                background-color: rgb(191, 215, 228);
+                color: rgb(0, 0, 0);
+                background-image: linear-gradient(to right,
+                rgba(148, 160, 223, 0.9) 25%,
+                rgba(149, 149, 190, 0.781) 50%,
+                rgba(200, 193, 236, 0.9) 75%);
+                -webkit-animation: 4s linear 0s infinite alternate move_eye;
+                animation: 4s linear 0s infinite alternate move_eye;
+                }
+            
+            
         </style>
     </head>
 <body>
     <section class="container" id="container">
-        <div class="box">
-            <h1><span style="background-color: powderblue;"><u>Protect Yourself From Covid-19</span></u></h1>
+        <div>
+            <a href="index.html" class="btn">Back</a>
+        </div>
+        <div class="head">
+            <h1><span>Protect Yourself From Covid-19</span></h1>
         </div>
     </section>
     <section class="awarness" id="awarness">
         <div class="box">
             <ul>
                 <li>
-                    <p ><b><span style="background-color: powderblue;">How to make your environment safer</b></p>
+                    <p ><b><span>How to make your environment safer</b></p>
                         <b>
                 Avoid the 3Cs: spaces that are closed, crowded or involve close contact.
             Outbreaks have been reported in restaurants, choir practices, fitness classes, nightclubs, offices and places of worship where people have gathered, often in crowded indoor settings where they talk loudly, shout, breathe heavily or sing.
@@ -33,36 +97,58 @@
   For more information on how to hold events like family gatherings, children’s football games and family occasions, read our Q&A; on small public gatherings.
   Avoid crowded or indoor settings but if you can’t, then take precautions:
   Open a window. Increase the amount of ‘natural ventilation’ when indoors.
-  WHO has published Q &A; on ventilation and air conditioning for both the general public and people who manage public spaces and buildings.
+  WHO has published Q&A; on ventilation and air conditioning for both the general public and people who manage public spaces and buildings.
   Wear a mask
+
+                <br>
+                <br>
+                <br>
                 <li>
-                    <p><b><span style="background-color: powderblue;">Dont forget the basics of hyginene</span></b></p>
+                    <p><b><span>Dont forget the basics of hyginene</span></b></p>
                     <b>
                 Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water. This eliminates germs including viruses that may be on your hands.
 Avoid touching your eyes, nose and mouth. Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and infect you.
 Cover your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately into a closed bin and wash your hands. By following good ‘respiratory hygiene’, you protect the people around you from viruses, which cause colds, flu and COVID-19.
 Clean and disinfect surfaces frequently especially those which are regularly touched, such as door handles, faucets and phone screens.</b>
                 </li>
+                <br>
+                <br>
+                <br>
                 <li>
-                    <p><b><span style="background-color: powderblue;">What to do if you feel unwell</span></b></p>
+                    <p><b><span>What to do if you feel unwell</span></b></p>
                    <b> Know the full range of symptoms of COVID-19. The most common symptoms of COVID-19 are fever, dry cough, and tiredness. Other symptoms that are less common and may affect some patients include loss of taste or smell, aches and pains, headache, sore throat, nasal congestion, red eyes, diarrhoea, or a skin rash.
 Stay home and self-isolate even if you have minor symptoms such as cough, headache, mild fever, until you recover. Call your health care provider or hotline for advice. Have someone bring you supplies. If you need to leave your house or have someone near you, wear a medical mask to avoid infecting others.
 If you have a fever, cough and difficulty breathing, seek medical attention immediately. Call by telephone first, if you can and follow the directions of your local health authority.
 Keep up to date on the latest information from trusted sources, such as WHO or your local and national health authorities. Local and national authorities and public health units are best placed to advise on what people in your area should be doing to protect themselves.
 </b> </li>
+    <br>
+    <br>
+    <br>
             </ul>
-        </div>
-    </section>
-    <section class="protect" id="protect">
-        <div class="box1">
-            <img src="Images/awarness1.png">
-        </div><br/>
-        <div class="box2">
-            <img src="Images/awarness2.png">
-        </div><br/><br/>
-        <div class="box3">
-            <img src="Images/awarness3.png">
-        </div>
+    </div>
+        <section class="protect" id="protect">
+            <p class="heading" style="font-size: 30px; background-color: rgba(220, 229, 245);color: rgba(8, 8, 77, 0.781);"> Protect yourself </p>
+            <div class="box-container">
+                <div class="box">
+                    <img src="Images/awarness2.png" alt="">
+                    <br>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <br><br>
+                <div class="box">
+                    <img src="Images/awarness1.png" alt="">
+                    <br>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <br><br>
+                <div class="box">
+                    <img src="Images/awarness3.png" alt="">
+                    <br>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <br><br>
+            </div>
+    </div>
     </section>
 </body>
 </html>
