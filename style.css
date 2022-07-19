@@ -370,7 +370,13 @@ header .navbar ul li a:hover{
     padding-top: 30px;
     font-size: 37px;
 }
+
 .news .livenews a{
+    color: grey;
+}
+
+.news .livenews1 {
+    font-size : 30px;
     color: grey;
 }
 
