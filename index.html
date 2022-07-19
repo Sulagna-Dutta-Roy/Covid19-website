@@ -23,6 +23,7 @@
                 <li><a href="#symtoms">Symptoms</a></li>
                 <li><a href="#precautions">Precautions</a></li>  
                 <li><a href="#spread">Spread News</a></li>
+                <img src="images/moon.svg" id="icon">
             </ul>
         </nav>
     </header>
@@ -37,7 +38,7 @@
         </div>
         </div>
         <div class="image">
-            <img src="Images/background.png" alt="">
+            <img src="Images/background.svg" alt="">
         </div>
     </section>
     <!------------------------------------------------------>
@@ -237,10 +238,23 @@
         <i class="fas fa-arrow-up"></i>
     </a>
     <!------------------------------------------------------------------------------>
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "images/sun.svg";
+            }else{
+                icon.src = "images/moon.svg";
+            }
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="index.js"></script>
+    
     <!-------------------------------------------------------------------->
-</body>
+    </body>
 </html>
 
 
