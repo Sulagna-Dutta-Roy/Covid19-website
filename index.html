@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width-device=width,initial-scale=1.0">
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <title>Covid-19 Tracker Website</title>
-        <link rel= "stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    </head>
+
+<head>
+    <meta name="viewport" content="width-device=width,initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Covid-19 Tracker Website</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+</head>
+
 <body>
+
     <header>
         <a href="#" class="logo">C<span class="fas fa-virus"></span>vid-19</a>
         <div id="menu"><i class="fas fa-bars"></i>
-        
+
         </div>
         <nav class="navbar">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="protect.html">Protection</a></li>
                 <li><a href="#symtoms">Symptoms</a></li>
-                <li><a href="#precautions">Precautions</a></li>  
+                <li><a href="#precautions">Precautions</a></li>
                 <li><a href="#spread">Spread News</a></li>
                 <img src="Images/moon.svg" id="icon">
             </ul>
@@ -32,7 +37,8 @@
             <h2>Covid-Website</h2>
             <form>
                 <a href="details.html" class="btn">Details</a>
-            <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HY0Be66cRO00vH" async> </script>
+                <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                    data-payment_button_id="pl_HY0Be66cRO00vH" async> </script>
             </form>
         </div>
         </div>
@@ -51,14 +57,14 @@
                 <p>Wash your hands properly for minimum 20 seconds.Use sanitizer in public places.</p>
                 <a href="#" class="btn">Learn More</a>
             </div>
-              <div class="box">
+            <div class="box">
                 <img src="Images/mask.png" alt="">
                 <h2>Wear Mask</h2>
                 <p>Wash your hands properly.Continue minimum 20mins.Use sanitizer in public places.</p>
                 <p>Do not forget to wear your masks in public places to avoid any exposure to the deadly virus.</p>
                 <a href="#" class="btn">Learn More</a>
             </div>
-              <div class="box">
+            <div class="box">
                 <img src="Images/vaccination.png" alt="">
                 <h2>Get Vaccinate</h2>
                 <p>Wash your hands properly.Continue minimum 20mins.Use sanitizer in public places.</p>
@@ -67,7 +73,7 @@
             </div>
         </div>
     </section>
-<!---------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------->
     <section class="symtoms" id="symtoms">
         <div class="content">
             <h1 class="heading"><span>What are the main</span> Symptoms </h1>
@@ -77,7 +83,7 @@
                     <li>Dry Cough</li>
                     <li>Headache</li>
                 </div>&nbsp; &nbsp;
-                 <div class="symtoms2">
+                <div class="symtoms2">
                     <li>Sore Throat</li>
                     <li>Joint Pains</li>
                     <li>Breathing Issues</li>
@@ -125,7 +131,7 @@
     <section class="spread" id="spread">
         <h1 class="heading">How Covid-19<span> spreads </span> over the world</h1>
         <div class="image">
-        </div>    
+        </div>
     </section>
     <!----------------------------------------------------------------------------->
     <section class="graph" id="graph">
@@ -137,61 +143,61 @@
                 var myChart = new Chart(ctx, {
                     type: 'line',
                     data: {
-                       labels: ['USA', 'India', 'Briten', 'Canada', 'Russia', 'Europe'],
-                       datasets: [{
-                        label: '# of Votes',
-                        data: [5, 19, 3, 2, 2, 0],
-                          backgroundColor: [
-                             'rgba(255, 99, 132, 0.2)',
-                             'rgba(54, 162, 235, 0.2)',
-                             'rgba(255, 206, 86, 0.2)',
-                             'rgba(75, 192, 192, 0.2)',
-                             'rgba(153, 102, 255, 0.2)',
-                             'rgba(255, 159, 64, 0.2)'
-            ],
-                          borderColor: [
-                            'rgba(255, 99, 132, 1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(153, 102, 255, 1)',
-                            'rgba(255, 159, 64, 1)'
-        ],
-         borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});              
-       </script>
+                        labels: ['USA', 'India', 'Briten', 'Canada', 'Russia', 'Europe'],
+                        datasets: [{
+                            label: '# of Votes',
+                            data: [5, 19, 3, 2, 2, 0],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(255, 206, 86, 0.2)',
+                                'rgba(75, 192, 192, 0.2)',
+                                'rgba(153, 102, 255, 0.2)',
+                                'rgba(255, 159, 64, 0.2)'
+                            ],
+                            borderColor: [
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(153, 102, 255, 1)',
+                                'rgba(255, 159, 64, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });              
+            </script>
         </div>
     </section>
     <!------------------------------------------------------------------------------>
     <section class="grid" id="grid">
         <div class="image">
-        </div>    
+        </div>
     </section>
     <!------------------------------------------------------------------------------>
-     <section class="news" id="news">
+    <section class="news" id="news">
         <h1 class="heading">Latest News Updates For Today</h1>
         <br></br>
         <div class="livenews">
             <a href="https://www.worldometers.info/coronavirus/country/india/">Updates On Worldometer</a>
-            <br/><br/>
+            <br /><br />
             <div class="livenews1">
-            <a href="https://www.who.int/">WHO Live Updates </a>
-            <br></br>
-            <a href="https://www.bbc.com/news/coronavirus">BBC Live Updates </a>
-            <br></br>
-            <a href="https://www.covid19india.org/"> Covid19 India </a>
-            <br></br>
-            <a href="https://www.news18.com/coronavirus-latest-news/"> News18 Live Updates </a>
-            <br></br>
+                <a href="https://www.who.int/">WHO Live Updates </a>
+                <br></br>
+                <a href="https://www.bbc.com/news/coronavirus">BBC Live Updates </a>
+                <br></br>
+                <a href="https://www.covid19india.org/"> Covid19 India </a>
+                <br></br>
+                <a href="https://www.news18.com/coronavirus-latest-news/"> News18 Live Updates </a>
+                <br></br>
             </div>
         </div>
     </section>
@@ -200,7 +206,15 @@
         <div class="box-container">
             <div class="box">
                 <h2>About Us</h2>
-                <p>Contact Us and stay connected</p>
+                <p>Contact Us and stay updated 😷</p>
+                
+                <button type="button" class=" button-download btn btn-block btn-dark btn-primary"
+                    style="background-color: white; color: black; cursor: pointer;"><i class="fab fa-apple" style="color:black"></i>
+                    Download</button>
+                <button type="button" class=" button-download btn btn-block btn-light btn-primary"
+                    style="background-color: white; color: black; cursor: pointer;"><i class="fab fa-google-play"
+                        style="color:black"></i> Download</button>
+
             </div>
             <div class="box">
                 <h2>Locations</h2>
@@ -224,36 +238,58 @@
                 <p>mumbai,India-12345</p>
                 <p>abc@gmail.com</p>
                 <div class="share">
-                    <a href="#" aria-label="instagram-profile-link"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="#" aria-label="instagram-profile-link"><i class="fab fa-instagram"></i></a>
                     <a href="#" aria-label="facebook-profile-link"><i class="fab fa-facebook"></i></a>
-                    <a href="#" aria-label="twitter-profile-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="twitter-profile-link"><i class="fab fa-twitter"></i></a> -->
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-facebook-f"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-twitter"></i></a>
+
+                    <!-- Google -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-google"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-instagram"></i></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-linkedin-in"></i></a>
+
                 </div>
             </div>
         </div>
         <h1 class="credit"><a href="#">Developed By Sulagna</a></h1>
     </section>
+
     <!---------------------------------->
-    <a href = "#home" class="scroll-top" aria-label="scroll-top-icon">
+    <a href="#home" class="scroll-top" aria-label="scroll-top-icon">
         <i class="fas fa-arrow-up"></i>
     </a>
     <!------------------------------------------------------------------------------>
     <script>
         var icon = document.getElementById("icon");
 
-        icon.onclick = function(){
+        icon.onclick = function () {
             document.body.classList.toggle("dark-theme");
-            if(document.body.classList.contains("dark-theme")){
+            if (document.body.classList.contains("dark-theme")) {
                 icon.src = "Images/sun.svg";
-            }else{
+            } else {
                 icon.src = "Images/moon.svg";
             }
         }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="index.js"></script>
-    
+
+
+
     <!-------------------------------------------------------------------->
-    </body>
+</body>
+
 </html>
-
-
