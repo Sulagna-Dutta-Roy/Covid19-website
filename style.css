@@ -580,3 +580,86 @@ header .navbar ul li a:hover{
         padding-top: 9rem;
     }
 }
+
+/* login page */
+.form-box
+{
+    width: 375px;
+    height: 350px;
+    position: relative;
+    margin: 5% auto;
+    background: rgb(255, 255, 255);
+    box-shadow: 5px 5px 20px;
+    padding: 5px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-top: 150px;
+}
+.button-box
+{
+    width: 220px;
+    margin : 35px auto;
+    position: relative;
+    border-radius: 30px;
+}
+.toggle-btn
+{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    position: relative;
+    outline: none;
+}
+#btn
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width  : 100px;
+    height: 100%;
+    background: linear-gradient(to right, #a80038,#b07706);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.input-group
+{
+    top : 130px;
+    position: absolute;
+    width: 280px;
+    transition : 0.5s;
+}
+.input-field
+{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn
+{
+    width : 80%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin:auto;
+    background: linear-gradient(to right, #a80038,#b07706);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-right: 37px;
+}
+#login
+{
+    left: 60px;
+}
+#register
+{
+    left:520px;
+}
