@@ -10,6 +10,7 @@
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 </head>
 
@@ -136,6 +137,54 @@
     <!----------------------------------------------------------------------------->
     <section class="graph" id="graph">
         <h1>Cases across the globe</h1>
+        <div class="counter-container">
+            <div class="counter-box">
+                <span>Total Cases</span>
+                <span id="total" class="counter">569804329</span>
+            </div>
+            <div class="counter-box">
+                <span>New Cases</span>
+                <span id="active" class="counter">608614</span>
+            </div>
+    
+            <div class="counter-box">
+                <span>Total Deaths</span>
+                <span id="dead" class="counter">6380992</span>
+            </div>
+        </div>
+        <script type="text/javascript">
+            let data={};
+            const url= "https://api.covid19api.com/summary";
+            async function getapi(url) {
+                const res= await fetch(url);
+                const string = await res.json();    
+                data["new"]=parseInt(string["Global"].NewConfirmed);
+                data["total"]=parseInt(string["Global"].TotalConfirmed);
+                data["dead"]=parseInt(string["Global"].TotalDeaths);
+    
+            }
+            getapi(url);
+            setTimeout(function()
+            {
+                console.log(typeof data);
+                console.log(data);  
+                document.getElementById("total").innerHTML=data["total"];
+                document.getElementById("dead").innerHTML=data["dead"];
+                document.getElementById("active").innerHTML=data["new"];
+            }, 1000);       
+        </script>
+        <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 3000
+            });
+        });
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>    
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+        
+        <!------------------------------------------------------>
         <div class="graphcases">
             <canvas id="myChart" width="700" height="400"></canvas>
             <script>
