@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width-device=width,initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Covid-19 Tracker Website</title>
+        <link rel= "stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    </head>
+<body>
+    <header>
+        <a href="#" class="logo">C<span class="fas fa-virus"></span>vid-19</a>
+        <div id="menu"><i class="fas fa-bars"></i>
+        
+        </div>
+        <nav class = "navbar">
+        <ul>
+        <li class = "navbar"><a href = "#"">Login | SignUp </a> </li>
+        </ul>
+        </nav>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Back To Main</a></li>
+                <img src="Images/moon.svg" id="icon">
+            </ul>
+        </nav>
+    </header>
+    <!--login table-->
+    <div class = "form-box">
+        <div class = "button-box">
+            <div id = "btn"></div>
+            <button type="button" class = "toggle-btn" onclick = "login()">Log in</button>
+            <button type="button" class = "toggle-btn" onclick="register()">SignUp</button>
+        </div>
+        <form id = "login" class = "input-group">
+            <input type = "text" class = "input-field" placeholder="Type the user id" required>
+            <input type = "password" class = "input-field" placeholder="Type the password" required>
+            <button type = "submit" class = "submit-btn">Log In</button>
+        </form>
+        <form id= "register" class = "input-group">
+            <input type = "text" class = "input-field" placeholder="Type the user id" required>
+            <input type = "text" class = "input-field" placeholder="Type the email id" required>
+            <input type = "password" class = "input-field" placeholder="Type the password" required>
+            <button type = "submit" class = "submit-btn">Register</button>
+        </form>
+    </div>
+    <!--login table ends-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h2>About Us</h2>
+                <p>Contact Us and stay connected</p>
+            </div>
+            <div class="box">
+                <h2>Locations</h2>
+                <a href="#">India</a>
+                <a href="#">Usa</a>
+                <a href="#">Russia</a>
+                <a href="#">Spain</a>
+                <a href="#">Etc</a>
+            </div>
+            <div class="box">
+                <h2>Navbars</h2>
+                <a href="#home">Home</a>
+                <a href="protect.html">Protection</a>
+                <a href="#symtoms">Symtoms</a>
+                <a href="#precautions">Precautions</a>
+                <a href="#spread">Spread News</a>
+            </div>
+            <div class="box">
+                <h2>Contact Info</h2>
+                <p>mumbai, 12345</p>
+                <p>mumbai,India-12345</p>
+                <p>abc@gmail.com</p>
+                <div class="share">
+                    <a href="#" aria-label="instagram-profile-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="facebook-profile-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="twitter-profile-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <h1 class="credit"><a href="#">Developed By Sulagna</a></h1>
+    </section>
+    <!---------------------------------->
+    <a href = "#home" class="scroll-top" aria-label="scroll-top-icon">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!------------------------------------------------------------------------------>
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "Images/sun.svg";
+            }else{
+                icon.src = "Images/moon.svg";
+            }
+        }
+    </script>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register()
+        {
+            x.style.left = "-400px";
+            y.style.left = "60px";
+            z.style.left = "100px";
+        }
+        function login()
+        {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+    
+    <!-------------------------------------------------------------------->
+</body>
+</html>
