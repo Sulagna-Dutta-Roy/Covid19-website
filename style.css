@@ -299,7 +299,8 @@ header .navbar ul li a:hover{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding:2rem 0;
+    padding: 2rem 0;
+    gap: 10px;
 }
 
 .precautions .row .image{
@@ -314,14 +315,17 @@ header .navbar ul li a:hover{
     object-fit: cover;
 }
 
-.precautions .row .content{
-    padding:2rem 0;
-    flex:1 1 37rem;
+.precautions .row .content {
+    padding: 2rem 0;
+    flex: 1 1 37rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 
 .precautions .row .content .heading{
     color: rgb(128, 128, 128);
-    margin-left: 20rem;
 }
 
 .precautions .row .content p{
@@ -335,7 +339,6 @@ header .navbar ul li a:hover{
     font-size: 2rem;
     color: var(--precautions-content);
     padding:.5rem 0;
-    margin-left: 22rem;
 }
 
 
