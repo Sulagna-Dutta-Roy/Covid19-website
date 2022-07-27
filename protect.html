@@ -71,6 +71,79 @@
                 -webkit-animation: 4s linear 0s infinite alternate move_eye;
                 animation: 4s linear 0s infinite alternate move_eye;
                 }
+
+            @media (max-width:682px){
+                html{
+                    font-size: 75%;
+                }
+            }
+            @media (max-width:800px){
+
+                .head{
+                    font-size: 20px;
+                    height: 100%;
+                    width:100%;
+                    border-top: .2rem solid rgba(0,0,0,.1);
+                }
+
+                .btn{
+                    display: inline-block;
+                    margin-top: 0.5rem;
+                    padding:0.5rem 1.5rem;
+                    border-radius: 5rem;
+                    background:var(--red);
+                    color:#fff;
+                    background-color: rgba(148, 160, 223, 0.9) ;
+                    overflow: hidden;
+                    position: relative;
+                    z-index: 0;
+                    font-size: 0.5rem;
+                    text-decoration: none;
+                }
+
+                .awarness{
+                    text-overflow: hidden;
+                    font-size: 75%;
+                }
+
+                .img{
+                    width: 50%;
+                    position: relative;
+
+                }
+
+                .heading {
+                    text-align: center;
+                    font-size: 75%;
+                }
+
+                body{
+                    margin: 50px;
+                    padding: 25;
+                    background-position: center;
+                    background-repeat: none;
+                    background-color: rgb(243, 248, 251);
+                    color: rgb(0, 0, 0);
+                    background-image: linear-gradient(to right,
+                    rgba(194, 202, 222, 0.9) 65%,
+                    rgba(44, 44, 215, 0.781) 10%,
+                    rgba(169, 166, 192, 0.9) 85%);
+                    -webkit-animation: 4s linear 0s infinite alternate move_eye;
+                    animation: 4s linear 0s infinite alternate move_eye;
+
+                }
+
+                
+            @media (max-width:500px){
+                html{
+                    font-size: 50%;
+                }
+                section{
+                    padding:0 3%;
+                    padding-top: 9rem;
+                }
+            }
+        }
             
             
         </style>
@@ -88,7 +161,7 @@
         <div class="box">
             <ul>
                 <li>
-                    <p ><b><span>How to make your environment safer</b></p>
+                    <p><b><span>How to make your environment safer</b></p>
                         <b>
                 Avoid the 3Cs: spaces that are closed, crowded or involve close contact.
             Outbreaks have been reported in restaurants, choir practices, fitness classes, nightclubs, offices and places of worship where people have gathered, often in crowded indoor settings where they talk loudly, shout, breathe heavily or sing.
@@ -130,19 +203,19 @@ Keep up to date on the latest information from trusted sources, such as WHO or y
             <p class="heading" style="font-size: 30px; background-color: rgba(220, 229, 245);color: rgba(8, 8, 77, 0.781);"> Protect yourself </p>
             <div class="box-container">
                 <div class="box">
-                    <img src="Images/awarness2.png" alt="">
+                    <img src="Images/awarness2.png" class="img">
                     <br>
                     <a href="#" class="btn">Learn More</a>
                 </div>
                 <br><br>
                 <div class="box">
-                    <img src="Images/awarness1.png" alt="">
+                    <img src="Images/awarness1.png" class="img">
                     <br>
                     <a href="#" class="btn">Learn More</a>
                 </div>
                 <br><br>
                 <div class="box">
-                    <img src="Images/awarness3.png" alt="">
+                    <img src="Images/awarness3.png" class="img">
                     <br>
                     <a href="#" class="btn">Learn More</a>
                 </div>
