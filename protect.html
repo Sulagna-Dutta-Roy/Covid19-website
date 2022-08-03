@@ -4,6 +4,8 @@
         <meta name="viewport" content="width-device=width,initial-scale=1.0">
         <meta charset="utf-8">
         <title>Protect And Awarness</title>
+        <!------font awesome----->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
         <style>
             body
             {
@@ -72,9 +74,73 @@
                 animation: 4s linear 0s infinite alternate move_eye;
                 }
 
+                /*----------------contact--------------*/
+
+.faq .container{
+    width:100%;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+.faq .row{
+    align-items: center;
+    display: block;
+    
+    width: 70%;
+}
+.faq-header{
+    display: flex;
+    border-bottom: 2px solid #3b5998;
+    
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.faq-header .open ,.faq-header .close{
+    position: absolute;
+    right: -10px;
+    padding: 0px 7px;
+   font-size: 22px;
+   font-weight: bold;
+   transform: translateY(-6px);
+   opacity: 0;
+   transition: all 500ms;
+}
+.faq-header .open.active ,.faq-header .close.active{
+ opacity: 1;
+ transform: translateY(0);
+}
+
+.faq-header h5{
+    font-size: 17px;
+    padding: 6px 3px;
+    margin-right: 2px;
+   
+}
+
+.content{
+    display: none;
+    font-size: 14px;
+    padding: 5px 20px;
+    line-height: 2;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 500ms;
+}
+ .content.active {
+   max-height: 90%;
+   display: block;
+   position: relative;
+
+}
+
             @media (max-width:682px){
                 html{
                     font-size: 75%;
+                }
+                .faq .container{
+                    width: 100%;
                 }
             }
             @media (max-width:800px){
@@ -132,6 +198,13 @@
                     animation: 4s linear 0s infinite alternate move_eye;
 
                 }
+                .faq .row{
+    align-items: center;
+    display: block;
+    
+    width: 100%;
+}
+            
 
                 
             @media (max-width:500px){
@@ -142,8 +215,14 @@
                     padding:0 3%;
                     padding-top: 9rem;
                 }
+
+                .faq .row{
+                   align-items: center;
+                   display: block;
+                   width: 100%;
+}
             }
-        }
+            }
             
             
         </style>
@@ -223,5 +302,130 @@ Keep up to date on the latest information from trusted sources, such as WHO or y
             </div>
     </div>
     </section>
+    <!---------------------contact---------------------------->
+<section class="faq container py-5"  id="contact">
+    <div class="py-4"  >
+        <p class="heading" style="font-size: 30px; background-color: rgba(220, 229, 245);color: rgba(8, 8, 77, 0.781); text-align: center;"> Vaccine Registration </p>
+    </div>
+  
+    <div class="container " >
+      <div class="row mx-auto">
+         
+          <div class="question-container ">
+            <div class="content-container">
+              <div class="faq-header">
+                <h5>Where can I get the vaccine from?</h5>
+                 <span class="open active">+</span>
+                 <span class="close">-</span>
+  
+              </div>
+              <div class="content ">
+                <p style="color:rgb(64, 50, 50); font-size: 15px;">Vaccines are available from Government and Private Health Facilities as notified, known as COVID Vaccination Centres (CVCs).</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="question-container">
+            <div class="content-container">
+              <div class="faq-header">
+                <h5>Will a Photo ID be required at the time of registration?</h5>
+                 <span class="open active">+</span>
+                 <span class="close">-</span>
+  
+              </div>
+              <div class="content">
+                <p style="color:rgb(64, 50, 50); font-size: 15px;">The Photo ID produced at the time of registration must be produced and verified at the time of vaccination.
+                </p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="question-container">
+            <div class="content-container">
+              <div class="faq-header">
+                <h5>How will the beneficiary receive information about due date of vaccination?</h5>
+                 <span class="open active">+</span>
+                 <span class="close">-</span>
+  
+              </div>
+              <div class="content">
+                <p style="color:rgb(64, 50, 50); font-size: 15px;">Following online registration, beneficiary will receive SMS on their registered mobile number about the due date, place and time of vaccination.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="question-container">
+            <div class="content-container">
+              <div class="faq-header">
+                <h5>Which COVID-19 vaccines are licensed in India?</h5>
+                 <span class="open active">+</span>
+                 <span class="close">-</span>
+  
+              </div>
+              <div class="content">
+                <p style="color:rgb(64, 50, 50); font-size: 15px;">Two vaccines were granted emergency use authorization by the Central Drugs Standard Control Organization (CDSCO) in India, Covishield® (AstraZeneca's vaccine manufactured by Serum Institute of India) and Covaxin® (manufactured by Bharat Biotech Limited). Sputnik - V has been granted EUA in the month of April 2021.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="question-container">
+            <div class="content-container">
+              <div class="faq-header">
+                <h5>Do I have a choice of vaccine I will receive?</h5>
+                 <span class="open active">+</span>
+                 <span class="close">-</span>
+  
+              </div>
+              <div class="content">
+                <p style="color:rgb(64, 50, 50); font-size: 15px;">The vaccine will be supplied to various parts of India as per availability and distribution plan, beneficiaries load and so at present the option of choice of vaccine is not available
+                </p>
+              </div>
+            </div>
+          </div>
+       
+          <div class="question-container">
+            <div class="content-container">
+              <div class="faq-header">
+                <h5>Is it mandatory to take the vaccine?</h5>
+                 <span class="open active">+</span>
+                 <span class="close">-</span>
+  
+              </div>
+              <div class="content">
+                <p style="color:rgb(64, 50, 50); font-size: 15px;">Vaccination for COVID-19 is voluntary. However, it is advisable to receive the complete schedule of COVID-19 vaccine for protecting oneself against this disease and also to limit the spread of this disease to the close contacts including family members, friends, relatives and co-workers.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+</section>  
+
+<!--------------------------------------------------->
+<script>
+    
+const faqheader = document.querySelectorAll('.faq-header');
+faqheader.forEach((header , i) =>{
+  header.addEventListener('click', () => {
+    header.nextElementSibling.classList.toggle('active');
+
+    const open= header.querySelector('.open');
+    const close= header.querySelector('.close');
+
+    if(header.nextElementSibling.classList.contains("active")){
+     
+      close.classList.add('active');
+    }
+    else{
+      
+      close.classList.remove('active');
+    }
+  });
+
+});
+</script>
 </body>
 </html>
