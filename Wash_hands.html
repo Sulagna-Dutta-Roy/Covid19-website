@@ -3,35 +3,51 @@
     <head>
         <meta name="viewport" content="width-device=width,initial-scale=1.0">
         <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
         <title>Wash Hands</title>
         <style>
             body
             {
                 margin: 50px;
-                padding: 25;
+                padding: 55;
                 font-size: 16px;
                 background-position: center;
                 background-color: rgb(243, 248, 251);
                 color: rgb(0, 0, 0);
-                background-image: linear-gradient(to right,
-                rgba(194, 202, 222, 0.9) 65%,
-                rgba(44, 44, 215, 0.781) 10%,
-                rgba(169, 166, 192, 0.9) 85%);
                 -webkit-animation: 4s linear 0s infinite alternate move_eye;
                 animation: 4s linear 0s infinite alternate move_eye;
             }
             p,li{
                 font-weight: bold;
+                line-height: 40px;
             }
             h1{
                 display: block;
                 text-align: center;
                 font-weight: bold;
+                font-size: 50px;
+            } 
+            h2{
+                font-size: 30px;
+            }
+            .image{
+                width: 100%;
+            }
+            /* Three image containers (use 25% for four, and 50% for two, etc) */
+            .column {
+            float: left;
+            width: 50%;
+            padding: 90px;
+            }
+
+            /* Clear floats after image containers */
+            .row::after {
+            content: "";
+            clear: both;
+            display: table;
             }
             span{
-                background-color: rgb(191, 215, 228);
                 color: rgb(0, 0, 0);
-                background-image: linear-gradient(to right, rgba(148, 160, 223, 0.9) 25%, rgba(149, 149, 190, 0.781) 50%, rgba(200, 193, 236, 0.9) 75%);
                 -webkit-animation: 4s linear 0s infinite alternate move_eye;
                 animation: 4s linear 0s infinite alternate move_eye;
 }
@@ -40,16 +56,31 @@
 }
             </style>
 <body>
+    <div>
+        <a href="index.html" class="btn">Back</a>
+    </div>
+    <!-------------------------------------------------------------->
      <h1><span>Wash Hands</span></h1>
-     <h2>How Germs Spread</h2>
-     <p>You can stay healthy and stop the spread of respiratory and diarrheal illnesses by washing your hands frequently. Individuals can contract germs from surfaces or from other people when you:</p>
-     <ul>
-       <li>Touch your eyes, nose, and mouth with unwashed hands</li>
-       <li>Prepare or eat food and drinks with unwashed hands</li>
-       <li>Touch surfaces or objects that have germs on them</li> 
-       <li>Blow your nose, cough, or sneeze into hands and then touch other people’s hands or common objects</li> 
-     </ul> 
-     <br>
+     <br><br><br>
+     <div class="row">
+        <div class="column">
+        <h2>How Germs Spread</h2>
+        <p>You can stay healthy and stop the spread of respiratory and diarrheal illnesses by washing your hands frequently. Individuals can contract germs from surfaces or from other people when you:</p>
+        <ul>
+          <li>Touch your eyes, nose, and mouth with unwashed hands</li>
+          <li>Prepare or eat food and drinks with unwashed hands</li>
+          <li>Touch surfaces or objects that have germs on them</li> 
+          <li>Blow your nose, cough, or sneeze into hands and then touch other people’s hands or common objects</li> 
+        </ul> 
+        </div>
+        <div class="column">
+            <img class="image" src="/Images/germs.jpg" alt="">
+        </div>
+     </div>
+     
+     <br><br><br>
+     <div class="row">
+        <div class="column">
      <h2>Key Times to Wash Hands</h2> 
      <p>Washing your hands frequently will help you and those you care about stay healthy, especially during these times when you are most likely to pick up and spread germs:</p>
      <ul>
@@ -64,7 +95,15 @@
         <li>After handling pet food or pet treats</li>
         <li>After touching garbage</li>
      </ul>
-     <br>
+    </div>
+    <div class="column">
+        <img class="image" src="/Images/sneeze.jpg" alt="">
+    </div>
+</div>
+
+<br><br><br>
+<div class="row">
+   <div class="column">
      <h2>Follow Five Steps to Wash Your Hands the Right Way</h2>
      <p>One of the simplest and most reliable ways to stop the spread of germs is to wash your hands. Maintaining clean hands can help prevent the transmission of germs across our communities, including your home, place of employment, schools, and childcare facilities.</p>
      <ol>
@@ -74,6 +113,11 @@
         <li>Rinse your hands well under clean, running water.</li>
         <li>Dry your hands using a clean towel or air dry them.</li>
      </ol> 
-     <img src="data:image/jpeg;base64,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"> 
+    </div>
+    <div class="column">
+        <img class="image" src="/Images/wash.jpg" alt="">
+    </div>
+</div>
+     
 </body>
 </html>
