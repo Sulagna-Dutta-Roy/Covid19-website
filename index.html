@@ -187,46 +187,45 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
         
         <!------------------------------------------------------>
-        <div class="graphcases">
-            <canvas id="myChart" width="700" height="400"></canvas>
-            <script>
-                var ctx = document.getElementById('myChart').getContext('2d');
-                var myChart = new Chart(ctx, {
-                    type: 'line',
-                    data: {
-                        labels: ['USA', 'India', 'Briten', 'Canada', 'Russia', 'Europe'],
-                        datasets: [{
-                            label: '# of Votes',
-                            data: [5, 19, 3, 2, 2, 0],
-                            backgroundColor: [
-                                'rgba(255, 99, 132, 0.2)',
-                                'rgba(54, 162, 235, 0.2)',
-                                'rgba(255, 206, 86, 0.2)',
-                                'rgba(75, 192, 192, 0.2)',
-                                'rgba(153, 102, 255, 0.2)',
-                                'rgba(255, 159, 64, 0.2)'
-                            ],
-                            borderColor: [
-                                'rgba(255, 99, 132, 1)',
-                                'rgba(54, 162, 235, 1)',
-                                'rgba(255, 206, 86, 1)',
-                                'rgba(75, 192, 192, 1)',
-                                'rgba(153, 102, 255, 1)',
-                                'rgba(255, 159, 64, 1)'
-                            ],
-                            borderWidth: 1
-                        }]
-                    },
-                    options: {
-                        scales: {
-                            y: {
-                                beginAtZero: true
-                            }
-                        }
-                    }
-                });              
-            </script>
-        </div>
+        <h1>Country Wise Report</h1><br><br>
+        <div class="covid-chart">
+            <div class="stats">
+              <div class="latest-report">
+                <div class="country">
+                  <div class="name">Loading...</div>
+                  <div class="change-country">change</div>
+                  <div class="search-country hide">
+                    <div class="search-box">
+                      <input type="text" id="search-input" placeholder="Search Country..."/>
+                      <img class="close" src="./images/close.svg">
+                    </div>
+                    <div class="country-list"></div>
+                  </div>
+                </div>
+                <div class="total-cases">
+                  <div class="title">Total Cases</div>
+                  <div class="value">0</div>
+                  <div class="new-value">+0</div>
+                </div>
+                <div class="recovered">
+                  <div class="title">Recovered</div>
+                  <div class="value">0</div>
+                  <div class="new-value">+0</div>
+                </div>
+                <div class="deaths">
+                  <div class="title">Deaths</div>
+                  <div class="value">0</div>
+                  <div class="new-value">+0</div>
+                </div>
+              </div>
+              <div class="chart">
+                <canvas id="axes_line_chart"></canvas>
+              </div>
+            </div>
+          </div>
+      
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+          <script src="chart.js"></script>
     </section>
     <!------------------------------------------------------------------------------>
     <section class="grid" id="grid">
