@@ -140,18 +140,35 @@
     <section class="graph" id="graph">
         <h1>Cases across the globe</h1>
         <div class="counter-container">
-            <div class="counter-box">
+           <div class="counter-box">
                 <span>Total Cases</span>
                 <span id="total" class="counter">569804329</span>
             </div>
+
+            <div class="counter-box">
+                <span>Total Deaths</span>
+                <span id="dead" class="counter">6380992</span>
+            </div>
+
+            <div class="counter-box">
+                <span>Total Recovered</span>
+                <span id="recovered" class="counter">1812</span>
+            </div>
+
             <div class="counter-box">
                 <span>New Cases</span>
                 <span id="active" class="counter">608614</span>
             </div>
+
+            
+            <div class="counter-box">
+                <span>New Deaths</span>
+                <span id="new_death" class="counter">0</span>
+            </div>
     
             <div class="counter-box">
-                <span>Total Deaths</span>
-                <span id="dead" class="counter">6380992</span>
+                <span>New Recovered</span>
+                <span id="new_recovered" class="counter">0</span>
             </div>
         </div>
         <script type="text/javascript">
@@ -163,6 +180,9 @@
                 data["new"]=parseInt(string["Global"].NewConfirmed);
                 data["total"]=parseInt(string["Global"].TotalConfirmed);
                 data["dead"]=parseInt(string["Global"].TotalDeaths);
+                data["new_death"]=parseInt(string["Global"].NewDeaths);
+                data["new_recovered"]=parseInt(string["Global"].NewRecovered);
+                data["recovered"]=parseInt(string["Global"].TotalRecovered);
     
             }
             getapi(url);
@@ -173,7 +193,10 @@
                 document.getElementById("total").innerHTML=data["total"];
                 document.getElementById("dead").innerHTML=data["dead"];
                 document.getElementById("active").innerHTML=data["new"];
-            }, 1000);       
+                document.getElementById("new_death").innerHTML=data["new_death"];
+                document.getElementById("new_recovered").innerHTML=data["new_recovered"]; 
+                document.getElementById("recovered").innerHTML=data["recovered"]; 
+            }, 1000);        
         </script>
         <script>
         jQuery(document).ready(function($) {
