@@ -507,13 +507,13 @@ header .navbar ul li a:hover{
 .counter-container .counter-box{
     position:relative;
     width: 200px;
-    height: 100px;
+    height: 150px;
     background: #333333;
     float:left;
     box-sizing:border-box;
     overflow:hidden;
     border-radius:10px; 
-    margin: 0px 60px;
+    margin: 20px 60px;
     text-align: center;
     padding-top: 10px;
 }
